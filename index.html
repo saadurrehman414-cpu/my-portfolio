@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Saad Rehman | Web Developer Portfolio</title>
+  <style>
+    *{margin:0;padding:0;box-sizing:border-box;}
+    body{font-family:Arial,Helvetica,sans-serif;line-height:1.6;background:#f4f6f8;color:#333;}
+    header{background:#0f172a;color:#fff;padding:30px 20px;text-align:center;}
+    header h1{font-size:36px;margin-bottom:10px;}
+    header p{font-size:18px;opacity:0.9;}
+
+    nav{background:#020617;padding:10px;text-align:center;}
+    nav a{color:#fff;margin:0 15px;text-decoration:none;font-weight:bold;}
+    nav a:hover{color:#38bdf8;}
+
+    section{padding:50px 20px;max-width:1100px;margin:auto;}
+    h2{font-size:28px;margin-bottom:20px;color:#0f172a;}
+
+    .about p{font-size:17px;max-width:800px;}
+
+    .skills{display:grid;grid-template-columns:repeat(auto-fit,minmax(200px,1fr));gap:20px;}
+    .skill-box{background:#fff;padding:20px;border-radius:8px;box-shadow:0 0 10px rgba(0,0,0,0.1);text-align:center;}
+    .skill-box h3{margin-bottom:10px;color:#1e293b;}
+
+    .projects{display:grid;grid-template-columns:repeat(auto-fit,minmax(280px,1fr));gap:25px;}
+    .project-card{background:#fff;border-radius:10px;box-shadow:0 0 12px rgba(0,0,0,0.1);padding:20px;}
+    .project-card h3{margin-bottom:10px;color:#020617;}
+    .project-card p{font-size:15px;margin-bottom:15px;}
+    .project-card button{padding:10px 15px;border:none;background:#0f172a;color:#fff;border-radius:5px;cursor:pointer;}
+    .project-card button:hover{background:#1e293b;}
+
+    .contact{background:#0f172a;color:#fff;border-radius:10px;}
+    .contact p{margin:10px 0;font-size:17px;}
+
+    footer{text-align:center;padding:15px;background:#020617;color:#fff;margin-top:40px;}
+
+    @media(max-width:600px){
+      header h1{font-size:28px;}
+      h2{font-size:24px;}
+    }
+  </style>
+</head>
+<body>
+
+<header>
+  <h1>Saad Rehman</h1>
+  <p>Frontend Web Developer | HTML • CSS • JavaScript</p>
+</header>
+
+<nav>
+  <a href="#about">About</a>
+  <a href="#skills">Skills</a>
+  <a href="#projects">Projects</a>
+  <a href="#contact">Contact</a>
+</nav>
+
+<section id="about" class="about">
+  <h2>About Me</h2>
+  <p>
+    I am a passionate frontend web developer with strong skills in HTML, CSS, JavaScript, and responsive web design.
+    I enjoy building clean, user-friendly, and responsive websites. I have worked on multiple academic and personal
+    projects that helped me gain hands-on experience in modern web development.
+  </p>
+</section>
+
+<section id="skills">
+  <h2>My Skills</h2>
+  <div class="skills">
+    <div class="skill-box"><h3>HTML5</h3><p>Semantic & SEO friendly structure</p></div>
+    <div class="skill-box"><h3>CSS3</h3><p>Flexbox, Grid & modern layouts</p></div>
+    <div class="skill-box"><h3>JavaScript</h3><p>DOM manipulation & logic</p></div>
+    <div class="skill-box"><h3>Responsive Design</h3><p>Mobile-first approach</p></div>
+    <div class="skill-box"><h3>UI Design</h3><p>Clean and professional layouts</p></div>
+    <div class="skill-box"><h3>Basic Git</h3><p>Version control fundamentals</p></div>
+  </div>
+</section>
+
+<section id="projects">
+  <h2>My Projects</h2>
+  <div class="projects">
+    <div class="project-card">
+      <h3>Student Portal</h3>
+      <p>A responsive student portal website with login pages, dashboard layout, and student information sections.</p>
+      <button onclick="showMsg('Student Portal')">View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Food Ordering Website</h3>
+      <p>An online food ordering website with menu cards, order buttons, and responsive layout.</p>
+      <button onclick="showMsg('Food Ordering Website')">View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Salt & Pepper Website</h3>
+      <p>A restaurant website inspired by Salt & Pepper brand using HTML, CSS and responsive design.</p>
+      <button onclick="showMsg('Salt & Pepper Website')">View Project</button>
+    </div>
+    <div class="project-card">
+      <h3>Portfolio Website</h3>
+      <p>A personal portfolio website showcasing skills, projects, and contact information.</p>
+      <button onclick="showMsg('Portfolio Website')">View Project</button>
+    </div>
+  </div>
+</section>
+
+<section id="contact" class="contact">
+  <h2>Contact Me</h2>
+  <p>Email: saadurrehman414@gmail.com</p>
+  <p>Phone: +92-3162135957</p>
+</section>
+
+<footer>
+  <p>© 2025 Saad Rehman | All Rights Reserved</p>
+</footer>
+
+    <script>
+    function showMsg(project){
+    alert('You clicked on ' + project + '. Add live link here.');
+  }
+</script>
+
+</body>
+</html>
